@@ -1,0 +1,47 @@
+.rangeDiv {
+  position: relative;
+  height: 14px;
+  border-radius: 10px;
+  text-align: left;
+  margin: 25px 0 10px 0
+}
+
+.rangeBitween {
+  position: relative;
+  left: 25%;
+  top: -14px;
+  height: 14px;
+  max-width: 50%;
+  border-radius: 14px;
+  background-color: #1ABC9C;
+}
+
+.rangeTotla {
+  position: relative;
+  left: 0;
+  height: 14px;
+  border-radius: 10px;
+  background-color: #CCC;
+}
+.rangePoint {
+  position: relative;
+  z-index: 2;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  background-color: #FFF;
+  border-radius: 50%;
+  outline: none;
+}
+
+
+
+.rangePointOne {
+  left: 25%;
+  top: -33px;
+}
+.rangePointTwo{
+  left: 69%;
+  top: -58px;
+}

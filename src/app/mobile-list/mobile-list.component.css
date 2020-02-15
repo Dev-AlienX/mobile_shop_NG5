@@ -1,0 +1,139 @@
+.mobile-list {
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px 1px lightgrey;
+}
+
+.mobile-list .row {
+  margin: 0;
+}
+
+.mobile-list .col {
+  padding: 0;
+}
+
+.mobile-list .col.s3 {
+  padding-right: 5px;
+  /* padding-bottom: 5px; */
+}
+
+.mobile-list .col.s9 {
+  padding-left: 5px;
+  /* padding-bottom: 5px; */
+}
+
+@media screen and (max-width:400px) {
+  .col.s3.img-container {
+    width: 85px;
+  }
+
+  .col.s9.mainContent {
+    width: calc(100% - 85px);
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:992px) {
+  .col.s3.img-container {
+    width: 90px;
+  }
+
+  .col.s9.mainContent {
+    width: calc(100% - 90px);
+  }
+}
+
+.mobile-list .col.img-container {
+  height: 150px !important;
+    min-height: 150px;
+    max-height: 150px;
+}
+
+.mobile-list .mainContent {
+  line-height: 1;
+}
+
+.mobile-list .mainContent .brandName {
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+}
+
+.mobile-list .mainContent .brandName .heart {
+  position: absolute;
+  right: 0;
+}
+
+.mobile-list .mainContent .brandName .heart i {
+  width: 15px;
+  max-height: 15px;
+  height: 15px;
+  display: block;
+  float: right;
+}
+
+.mobile-list .mainContent .brandName h6 {
+  margin: 0 !important;
+  max-width: 90%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.mobile-list .mainContent .rateing {
+  display: inline-flex;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.mobile-list .mainContent .rateing p {
+  background: #37be5f;
+  padding: 2px 6px;
+  color: white;
+  border-radius: 9px;
+  font-weight: 500;
+}
+
+.mobile-list .mainContent .rateing span {
+  padding: 2px;
+}
+
+.mobile-list .mainContent .price {
+  padding-top: 8px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.mobile-list .mainContent .price p:last-child {
+  padding-left: 10px;
+  color: green;
+}
+
+.mobile-list .mainContent .price span {
+  padding-left: 10px;
+  text-decoration: line-through;
+  color: #00000080;
+}
+
+.mobile-list .mainContent .emi {
+  padding-top: 8px;
+}
+
+.mobile-list .mainContent .delevery {
+  padding-top: 8px;
+}
+
+.mobile-list .mainContent .extraTags {
+  padding-top: 8px;
+}
+
+.mobile-list .mainContent .extraTags.row {
+  max-width: 340px;
+}
+
+.mobile-list .mainContent .extraTags p {
+  padding: 2px 6px;
+  margin: 2px !important;
+  color: #6b6b6b;
+  border: 1px solid lightgray;
+}

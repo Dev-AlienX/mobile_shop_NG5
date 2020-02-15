@@ -1,0 +1,29 @@
+<div class="navbar" *ngIf="!searchActive">
+  <div class="brand">
+    <h5>MySite</h5>
+  </div>
+  <div class="search" *ngIf="screenWidth > 640">
+    <input [(ngModel)]="searchText" class="search-input" (keyup)="newSearch()" (keyup.enter)="newSearch()"
+      placeholder="search..">
+    <a (click)="newSearch()" class="search-icon"><i class="material-icons">search</i></a>
+  </div>
+  <div class="links">
+    <div class="mob-search" *ngIf="screenWidth < 641">
+      <a (click)="showSearch()">
+        <i class="material-icons">search</i>
+      </a>
+    </div>
+    <div class="user">
+      <i class="material-icons" appModal [title]="login" (click)="openUserModal()">perm_identity</i>
+    </div>
+    <div class="cart">
+      <i class="material-icons">add_shopping_cart</i>
+    </div>
+  </div>
+</div>
+<div class="search-active" *ngIf="searchActive">
+  <input [(ngModel)]="searchText" class="search-input" (keyup)="newSearch()" (keyup.enter)="newSearch()"
+    placeholder="search..">
+  <a (click)="newSearch()" class="search-icon"><i class="material-icons">search</i></a>
+  <button class="close-search" (click)="hideSearch()"><i class="material-icons">clear</i></button>
+</div>

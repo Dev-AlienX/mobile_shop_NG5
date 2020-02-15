@@ -1,0 +1,59 @@
+<div class="container-fluid">
+  <div class="mainSideDiv">
+    <section>
+      <span style="font-size:18px; font-weight:500;">Filters</span>
+    </section>
+    <!-- <section>
+            <input [(ngModel)]="searchText" class="search-input" (keyup.enter)="newSearch()" placeholder="search..">
+            <a (click)="newSearch()" class="search-icon"><i class="material-icons">search</i></a>
+        </section> -->
+    <section>
+      <div class="row" style="margin: 0 !important">
+        <h6 class="margin0 bold paddingBottom15">Price</h6>
+        <div class="col" *ngIf="minPrice || maxPrice" style="float: right; padding-top: 9px;padding-right: 1px; ">
+          <a class="waves-effect btn waves-light"
+            style="height: 20px !important; line-height: 21.4px !important;font-size: 13px !important;"
+            (click)="minMaxApply()">Apply</a>
+        </div>
+      </div>
+      <div class="row price-sec" style="margin: 0;">
+        <div class="col s12 m12 l12 xl6" style="padding-left: 0;">
+          <input class="search-input" [(ngModel)]="minPrice" onkeypress="return isNumberKey(event)" pattern="[0-9]+"
+            placeholder="Min..">
+        </div>
+        <div class="col s12 m12 l12 xl6">
+          <input class="search-input" [ngStyle]="dangerColor" [(ngModel)]="maxPrice"
+            onkeypress="return isNumberKey(event)" pattern="[0-9]+" placeholder="Max..">
+        </div>
+      </div>
+      <span *ngIf="rangeError" style="color: #f44336; text-transform: capitalize">thik se price dal budbak!</span>
+    </section>
+    <section style="padding-bottom: 5px;">
+      <h6 class="margin0 bold paddingBottom15">Brands</h6>
+      <p *ngFor="let brand of mobileBrand | unique : 'brand'" class="dark capitalize">
+        <label>
+          <input type="checkbox" class="filled-in" [(ngModel)]="brand.brandSelected" (change)="onBrandSelect()" />
+          <span>{{brand.brand}}</span>
+        </label>
+      </p>
+    </section>
+    <section style="padding-bottom: 5px;">
+      <h6 class="margin0 bold paddingBottom15">Ram</h6>
+      <p *ngFor="let ram of mobileRam | unique : 'ram'" class="dark capitalize">
+        <label>
+          <input type="checkbox" class="filled-in" [(ngModel)]="ram.ramSelected" (change)="onRamSelect()" />
+          <span>{{ram.ram}}GB</span>
+        </label>
+      </p>
+    </section>
+    <section style="padding-bottom: 5px;">
+      <h6 class="margin0 bold paddingBottom15">Rom</h6>
+      <p *ngFor="let rom of mobileRom | unique : 'rom'" class="dark capitalize">
+        <label>
+          <input type="checkbox" class="filled-in" [(ngModel)]="rom.romSelected" (change)="onRomSelect()" />
+          <span>{{rom.rom}}</span>
+        </label>
+      </p>
+    </section>
+  </div>
+</div>

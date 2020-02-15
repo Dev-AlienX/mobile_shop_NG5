@@ -1,0 +1,15 @@
+.timeShow{
+    position: fixed;
+}
+.navbar-fixed{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 60px !important;
+    top: 0;
+}
+#main-routing{
+    top: 60px;
+    position: relative;
+    height: calc(100% - 60px);
+}
