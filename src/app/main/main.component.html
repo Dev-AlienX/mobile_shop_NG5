@@ -1,0 +1,32 @@
+<filter-in-mobile *ngIf="screenWidth <= 992"></filter-in-mobile>
+<div class="row">
+  <div class="col xl2 l2 m3 product-menu" *ngIf="screenWidth > 992">
+    <app-side-nav [innerWidth]="screenWidth"></app-side-nav>
+  </div>
+  <div class="col xl10 l10 m12 s12" *ngIf="screenWidth > 992">
+
+    <div class="row mainDiv group">
+      <div class="top-Panal">
+        <div class="breadcrumb">
+          <p>Smartphone :</p>
+        </div>
+        <div class="sort-dropdown">
+          sort By
+
+        </div>
+      </div>
+      <div class="col s12 m12 l3 xxl25"
+        *ngFor="let mobileBox of mobileDetail  | customFilter : searchText | minMaxPipe : minPrice :maxPrice | categoryFilter : { property: 'brand'} : brandSelected : false | categoryFilter : { property: 'ram'} : ramSelected : false | categoryFilter : { property: 'rom'} : romSelected : false | orderBy: type : method ; let i = index ">
+        <mobile-card [cardConfig]="mobileBox"></mobile-card>
+      </div>
+    </div>
+  </div>
+  <div class="col xl10 l10 m12 s12 mobile-view" *ngIf="screenWidth <= 992" style="padding: 0;">
+    <div class="row mainDiv group" style="box-shadow: unset;">
+      <div class="col s12 m12 l3 xxl25"
+        *ngFor="let mobileBox of mobileDetail  | customFilter : searchText | minMaxPipe : minPrice :maxPrice | categoryFilter : { property: 'brand'} : brandSelected : false | categoryFilter : { property: 'ram'} : ramSelected : false | categoryFilter : { property: 'rom'} : romSelected : false | orderBy: type : method ;  let i = index ">
+        <mobile-list [cardConfig]="mobileBox"></mobile-list>
+      </div>
+    </div>
+  </div>
+</div>

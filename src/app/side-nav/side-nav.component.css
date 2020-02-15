@@ -1,0 +1,48 @@
+.mainSideDiv {
+    position: relative;
+    background: #fff;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, .06);
+}
+
+.mainSideDiv section {
+    padding: 16px;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.search-icon {
+    cursor: pointer;
+    position: relative;
+    top: -43px;
+    float: right;
+    right: 11px;
+}
+
+.search-input {
+    width: 96%;
+    /* position: absolute; */
+    /* left: 13px; */
+    /* display: block; */
+    border: none;
+    /* border-radius: 3px; */
+    box-shadow: 1px 1px 6px 0px #cacaca;
+    padding-left: 10px;
+}
+
+.price-sec input {
+    height: 2rem !important;
+}
+
+.price-sec .search-input {
+    width: 100%;
+}
+
+.price-sec div:first-child {
+    padding-left: 0 !important;
+}
+
+.price-sec div:last-child.l12,
+div:last-child.s12,
+div:last-child.m12 {
+    padding-left: 0 !important;
+}

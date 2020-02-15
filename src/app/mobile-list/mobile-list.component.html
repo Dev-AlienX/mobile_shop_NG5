@@ -1,0 +1,42 @@
+<div class="mobile-list">
+    <div class="row">
+        <div class="col s3 img-container">
+            <app-img-view imgPath="{{ cardConfig.imgPath }}" imgClass="img"></app-img-view>
+        </div>
+        <div class="col s9 mainContent">
+            <div class="brandName">
+                <h6>
+                    <span>{{ cardConfig.brand | capitalize  }}</span>
+                    <span> {{cardConfig.modal | capitalize }}</span>
+                    <span> ({{ cardConfig.color + " " + cardConfig.ram + "GB"}})</span>
+                </h6>
+                <span class="heart">
+                    <i>
+                        <svg viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                                                                                                                c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </i>
+                </span>
+            </div>
+            <div class="rateing">
+                <p>{{ cardConfig.rateing }}</p> <span>(<span>{{ ratings }}</span>)</span>
+            </div>
+            <div class="price">
+                <p>{{ cardConfig.price }} </p><span> {{ disconute }}</span>
+                <p>{{ tempNo }}% off</p>
+            </div>
+            <div class="delevery">
+                <p>Free Delevery</p>
+            </div>
+            <div class="extraTags row">
+                <p class="col">{{ cardConfig.ram + "GB RAM " }}</p>
+                <p class="col">{{ cardConfig.rom + " ROM" }}</p>
+                <p class="col">{{ cardConfig.primaryCamera }}</p>
+                <p class="col">{{cardConfig.Battery}} mAh</p>
+                <p class="col">{{ cardConfig.processar }}</p>
+
+            </div>
+        </div>
+    </div>
+</div>

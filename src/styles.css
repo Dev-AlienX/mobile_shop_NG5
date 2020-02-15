@@ -1,0 +1,174 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* material css import */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* google font */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+body {
+    margin: unset !important;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):before {
+    top: -3px;
+    left: -1px;
+    width: 7px;
+    height: 12px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+[type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border: 2px solid #5a5a5a;
+    top: 0px;
+    z-index: 0;
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #26a69a;
+    background-color: #26a69a;
+    z-index: 0;
+}
+
+.margin0 {
+    margin: 0 !important;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.paddingBottom15 {
+    padding-bottom: 15px !important;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.capitalize {
+    text-transform: capitalize !important;
+}
+
+[type="checkbox"]+span:not(.lever) {
+    position: relative;
+    padding-left: 27px;
+    cursor: pointer;
+    display: inline-block;
+    height: 28px;
+    line-height: 1;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dark {
+    color: black !important;
+}
+
+label {
+    color: black;
+}
+
+@media screen and (min-width: 1500px) {
+    .col.xxl1 {
+        width: 8.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .col.xxl2 {
+        width: 16.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .col.xxl25 {
+        width: 20% !important;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .col.xxl3 {
+        width: 25%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .col.xxl4 {
+        width: 33.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .col.xxl5 {
+        width: 41.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .col.xxl6 {
+        width: 50%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .col.xxl7 {
+        width: 58.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .col.xxl8 {
+        width: 66.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .col.xxl9 {
+        width: 75%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .col.xxl10 {
+        width: 83.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .col.xxl11 {
+        width: 91.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .col.xxl12 {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+}
