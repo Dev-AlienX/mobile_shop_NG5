@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   get format() { return this.toggle ? 'shortDate' : 'fullDate'; }
-  title = 'material-app';
+  title = 'mobile_shop_NG5';
   currentDate = new Date(1988, 3, 15); // April 15, 1988
   toggle = false; // start with true == shortDate
   testTest = 'Ganesh';

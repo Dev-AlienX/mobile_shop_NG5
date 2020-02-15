@@ -32,6 +32,9 @@ import { RamFilterPipe } from './ram-filter.pipe';
 import { OrderByPipe } from './order-by.pipe';
 import { RomFilterPipe } from './rom-filter.pipe';
 import { CustomFilterPipe } from './custom-filter.pipe';
+import { UserLoginComponent } from './user-login/user-login.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +60,10 @@ import { CustomFilterPipe } from './custom-filter.pipe';
     RamFilterPipe,
     OrderByPipe,
     RomFilterPipe,
-    CustomFilterPipe
+    CustomFilterPipe,
+    UserFormComponent,
+    UserLoginComponent,
+    UserDetailComponent
 
   ],
   entryComponents: [
